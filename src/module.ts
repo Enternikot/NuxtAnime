@@ -1,19 +1,32 @@
-import { defineNuxtModule, addPlugin, createResolver } from '@nuxt/kit'
+import {
+  defineNuxtModule,
+  addPlugin,
+  createResolver,
+  addComponentsDir,
+} from "@nuxt/kit";
 
 // Module options TypeScript interface definition
 export interface ModuleOptions {}
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: 'my-module',
-    configKey: 'myModule',
+    name: "nuxt-anime",
+    configKey: "nuxtAnime",
   },
   // Default configuration options of the Nuxt module
   defaults: {},
-  setup(_options, _nuxt) {
-    const resolver = createResolver(import.meta.url)
+  setup(_options, nuxt) {
+    const resolver = createResolver(import.meta.url);
 
-    // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `npm run prepack`
-    addPlugin(resolver.resolve('./runtime/plugin'))
+    const composables = resolver.resolve("./runtime/composables");
+    nuxt.options.alias["nuxtAnime"] = composables;
+
+    addComponentsDir({
+      path: resolver.resolve("./runtime/components"),
+      prefix: "",
+      pathPrefix: false,
+    });
+
+    addPlugin(resolver.resolve("./runtime/plugin"));
   },
-})
+});

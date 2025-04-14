@@ -1,8 +1,10 @@
 <template>
   <div>
-    Nuxt module playground!
+    <AnimateDemo />
+    <TimelineDemo />
+    <DirectiveDemo />
+    <AnimeComponents />
   </div>
 </template>
 
-<script setup>
-</script>
+<script setup lang="ts"></script>
