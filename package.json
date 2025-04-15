@@ -1,6 +1,6 @@
 {
   "name": "nuxt-anime",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "NuxtAnime",
   "repository": "Enternikot/NuxtAnime",
   "license": "MIT",
@@ -21,6 +21,20 @@
   },
   "files": [
     "dist"
+  ],
+  "keywords": [
+    "nuxt",
+    "nuxt-anime",
+    "nuxt-animate",
+    "nuxt-module",
+    "anime-module",
+    "nuxt-animations",
+    "nuxt-anime-module",
+    "animations",
+    "animejs",
+    "animejs 4",
+    "animejs v4",
+    "anime"
   ],
   "scripts": {
     "prepack": "nuxt-module-build build",

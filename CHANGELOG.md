@@ -1,5 +1,9 @@
 # Changelog
 
 
+## v0.1.6
+
+[compare changes](https://github.com/Enternikot/NuxtAnime/compare/v0.1.5...v0.1.6)
+
 ## v0.1.5
 
