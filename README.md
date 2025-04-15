@@ -18,7 +18,7 @@ Find and replace all on all files (CMD+SHIFT+F):
 A Plug & Play Adapter for the new Anime.js 4 Version.
 
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
-- [🏀 Online playground](https://stackblitz.com/github/Enternikot/nuxt-anime?file=playground%2Fapp.vue)
+- [🏀 Online playground](https://stackblitz.com/github/Enternikot/NuxtAnime/tree/master/playground?file=package.json)
 - [📖 &nbsp;Documentation](https://example.com)
 
 ## Features
