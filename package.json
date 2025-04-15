@@ -1,8 +1,8 @@
 {
-  "name": "my-module",
-  "version": "1.0.0",
-  "description": "My new Nuxt module",
-  "repository": "your-org/my-module",
+  "name": "nuxt-anime",
+  "version": "0.1.1",
+  "description": "NuxtAnime",
+  "repository": "Enternikot/NuxtAnime",
   "license": "MIT",
   "type": "module",
   "exports": {

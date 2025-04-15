@@ -12,7 +12,6 @@ const props = withDefaults(
   defineProps<{
     is?: string;
     animate?: AnimationParams;
-    play:
   }>(),
   {
     is: "div",
