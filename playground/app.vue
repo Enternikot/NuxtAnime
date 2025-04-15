@@ -1,10 +1,3 @@
 <template>
-  <div>
-    <AnimateDemo />
-    <TimelineDemo />
-    <DirectiveDemo />
-    <AnimeComponents />
-  </div>
+  <NuxtPage />
 </template>
-
-<script setup lang="ts"></script>

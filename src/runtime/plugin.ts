@@ -1,8 +1,9 @@
 import { defineNuxtPlugin } from "#app";
-import { computed, onMounted, ref } from "vue";
+import { computed, onMounted, provide, ref } from "vue";
 import { animate } from "animejs";
 
 export default defineNuxtPlugin((nuxtApp) => {
+  nuxtApp.provide("animate", animate);
   nuxtApp.vueApp.directive("animate", {
     mounted(el, binding) {
       const params = computed(() => {
@@ -16,13 +17,4 @@ export default defineNuxtPlugin((nuxtApp) => {
   const animatePlay = (e) => {
     console.log(e);
   };
-  nuxtApp.provide("animatePause", animatePlay);
 });
-
-// export default defineNuxtPlugin((nuxtApp) => {
-//   nuxtApp.vueApp.directive("animate", {
-//     mounted(el) {
-//       console.log(el);
-//     },
-//   });
-// });
