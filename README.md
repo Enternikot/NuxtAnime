@@ -46,7 +46,7 @@ export default defineNuxtConfig({
 });
 ```
 
-That's it! You can now use NuxtANime in your Nuxt app ✨
+That's it! You can now use NuxtAnime in your Nuxt app ✨
 
 ```js
 <script>
