@@ -32,13 +32,32 @@ A Plug & Play Adapter for the new Anime.js 4 Version.
 
 ## Quick Setup
 
-Install the module to your Nuxt application with one command:
+Install the Module manually with:
 
 ```bash
-npx nuxi module add my-module
+npm install nuxt-anime
 ```
 
-That's it! You can now use My Module in your Nuxt app ✨
+Then, add it to your `modules` in your `nuxt.config`
+
+```js
+export default defineNuxtConfig({
+  modules: ["nuxt-anime"],
+});
+```
+
+That's it! You can now use NuxtANime in your Nuxt app ✨
+
+```js
+<script>
+  const box = useTemplateRef("box");
+  const anim = await useAnimate(box, {
+    autoplay: false,
+    x: 100,
+    rotate: 360,
+  });
+</script>
+```
 
 ## Contribution
 
