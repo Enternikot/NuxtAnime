@@ -1,15 +1,13 @@
 <template>
   <div>
-    <Animate
+    <VAnimate
       is="div"
       :animate="{
         x: 300,
         rotate: 120,
       }"
       class="box"
-      @play=""
-    >
-    </Animate>
+    />
   </div>
 </template>
 

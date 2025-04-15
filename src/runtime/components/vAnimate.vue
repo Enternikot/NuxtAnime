@@ -5,27 +5,27 @@
 </template>
 
 <script lang="ts" setup>
-import { animate, JSAnimation, type AnimationParams } from "animejs";
-import { getCurrentInstance, onMounted, ref, useTemplateRef } from "vue";
+import type { JSAnimation, AnimationParams } from "animejs";
+import { animate } from "animejs";
+import { onMounted, ref, useTemplateRef } from "vue";
 
 const props = withDefaults(
   defineProps<{
     is?: string;
-    animate?: AnimationParams;
+    animateParams?: AnimationParams;
   }>(),
   {
     is: "div",
+    animateParams: {},
   },
 );
 const anim = ref<JSAnimation>();
 const el = useTemplateRef<HTMLElement>("el");
 
-const emits = defineEmits(["play", "pause"]);
-
 anim.value?.play();
 
 onMounted(() => {
-  anim.value = animate(el.value!, { ...props.animate });
+  anim.value = animate(el.value!, { ...props.animateParams });
 });
 </script>
 

@@ -6,7 +6,7 @@ import {
 } from "@nuxt/kit";
 
 // Module options TypeScript interface definition
-export interface ModuleOptions {}
+import type { ModuleOptions } from "./types/module";
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {

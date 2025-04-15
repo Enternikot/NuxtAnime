@@ -1,12 +1,11 @@
 <template>
-  <div class="outer" ref="boxOuter">
+  <div ref="boxOuter" class="outer">
     <h1>TimeLine</h1>
-    <div class="box" ref="box-1"></div>
-    <div class="box" ref="box-2"></div>
-    <div class="box" ref="box-3"></div>
+    <div ref="box-1" class="box" />
+    <div ref="box-2" class="box" />
+    <div ref="box-3" class="box" />
     <button @click="playAnimTimeLine">Play Animation</button>
     <button @click="ResetAnimTimeLine">Reset Animation</button>
-    <br />
   </div>
 </template>
 

@@ -1,4 +1,4 @@
-import { JSAnimation } from "animejs";
+import type { JSAnimation } from "animejs";
 
 /**
  * Provides the main `anime` function as custom composable.

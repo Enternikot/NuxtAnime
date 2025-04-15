@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Directive</h1>
-    <div ref="box" class="box" v-animate="{ x: xVal }" />
+    <div ref="box" v-animate="{ x: xVal }" class="box" />
     <pre>xVal: {{ xVal }}</pre>
   </div>
 </template>

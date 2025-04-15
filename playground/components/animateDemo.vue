@@ -1,7 +1,6 @@
 <template>
   <h1>Animate</h1>
-  <div class="box" ref="box"></div>
-  <br />
+  <div ref="box" class="box" />
   <button @click="playAnim">Play Animation</button>
   <button @click="ResetAnim">Reset Animation</button>
 </template>

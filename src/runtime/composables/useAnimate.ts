@@ -1,10 +1,9 @@
-import {
-  animate,
-  createTimeline,
+import { animate, createTimeline } from "animejs";
+import type {
   JSAnimation,
   Timeline,
-  type AnimationParams,
-  type TimelineParams,
+  AnimationParams,
+  TimelineParams,
 } from "animejs";
 import { ref } from "vue";
 import { onMounted, type ShallowRef } from "vue";
