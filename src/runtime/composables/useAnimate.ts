@@ -8,7 +8,7 @@ import type {
 import { ref } from "vue";
 import { onMounted, type ShallowRef } from "vue";
 
-const useAnimate = async (
+export const useAnimate = async (
   target: ShallowRef<HTMLElement | null>,
   params: AnimationParams,
 ) => {
@@ -23,7 +23,7 @@ const useAnimate = async (
   }
 };
 
-const useAnimateTimeline = async (
+export const useAnimateTimeline = async (
   TimelineParams: TimelineParams,
   items: {
     target: ShallowRef<HTMLElement | null>;
@@ -43,5 +43,3 @@ const useAnimateTimeline = async (
     return timeline;
   }
 };
-
-export { useAnimate, useAnimateTimeline };
