@@ -8,7 +8,7 @@ import {
 // Module options TypeScript interface definition
 // import type { ModuleOptions } from "./types/module";
 
-export default defineNuxtModul({
+export default defineNuxtModule({
   meta: {
     name: "nuxt-anime",
     configKey: "nuxtAnime",
