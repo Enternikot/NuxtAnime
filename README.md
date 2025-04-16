@@ -19,7 +19,7 @@ A Plug & Play Adapter for the new Anime.js 4 Version.
 
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
 - [🏀 Online playground](https://stackblitz.com/github/Enternikot/NuxtAnime/tree/master/playground?file=package.json)
-- [📖 &nbsp;Documentation](https://example.com)
+- [📖 &nbsp;Documentation](https://nuxtanime.vercel.app/)
 
 ## Features
 
