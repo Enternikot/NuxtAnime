@@ -3,6 +3,7 @@ import {
   addPlugin,
   createResolver,
   addComponentsDir,
+  addImportsDir,
 } from "@nuxt/kit";
 
 // Module options TypeScript interface definition
@@ -15,11 +16,11 @@ export default defineNuxtModule({
   },
   // Default configuration options of the Nuxt module
   defaults: {},
-  setup(_options, nuxt) {
+  setup(_options, _nuxt) {
     const resolver = createResolver(import.meta.url);
 
     const composables = resolver.resolve("./runtime/composables");
-    nuxt.options.alias["nuxtAnime"] = composables;
+    addImportsDir(composables);
 
     addComponentsDir({
       path: resolver.resolve("./runtime/components"),
