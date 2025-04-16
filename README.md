@@ -13,6 +13,7 @@ Find and replace all on all files (CMD+SHIFT+F):
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![License][license-src]][license-href]
 [![Nuxt][nuxt-src]][nuxt-href]
+[![Volta][volta-src]][volta-href]
 [![Anime][anime-src]][anime-href]
 
 A Plug & Play Adapter for the new Anime.js 4 Version.
@@ -24,12 +25,12 @@ A Plug & Play Adapter for the new Anime.js 4 Version.
 ## Features
 
 <!-- Highlight some of the features your module provide here -->
-
-- ✨ &nbsp; No configuration required
-- 💪 &nbsp; Choose your Style - Compatible for Composables, Directives and also for Components
-- ✨ &nbsp; Currently animate and timeline are supported. Further functions will follow.
-- ✨ &nbsp; Type-Safety for all current params from Anime.js 4
-- ✨ &nbsp; Easy to Use and fully Customizable
+- ✨ **Zero Configuration**: No setup required to get started.
+- 💪 **Flexible Usage**: Choose your style – use as **Composables**, **Directives**, or **Components**.
+- 👷 **Core Features**: Currently supports `animate` and `timeline`. More functions and helpers are planned!
+- 👷 **Type-Safe**: Full TypeScript support for current Anime.js v4 parameters.
+- 🧩 **Easy & Customizable**: Simple to integrate and fully adaptable to your needs.
+- 🕹️ **Full Control**: Provides complete access to the `JSAnimation` object and methods returned by Anime.js for fine-grained control.
 
 ## Quick Setup
 
@@ -107,3 +108,5 @@ Published under the [MIT License](./LICENSE)
 [nuxt-href]: https://nuxt.com
 [anime-src]: https://img.shields.io/badge/Anime.js-020420
 [anime-href]: https://animejs.com/
+[volta-src]: https://img.shields.io/badge/Open%20Board-020420?logo=volta
+[volta-href]: https://volta.net/Enternikot/NuxtAnime
