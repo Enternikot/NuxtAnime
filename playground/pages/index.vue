@@ -4,5 +4,6 @@
     <TimelineDemo />
     <DirectiveDemo />
     <AnimeComponents />
+    <AnimateStaggerDemo />
   </div>
 </template>

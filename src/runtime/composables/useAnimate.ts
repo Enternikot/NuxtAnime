@@ -9,17 +9,23 @@ import { ref } from "vue";
 import { onMounted, type ShallowRef } from "vue";
 
 export const useAnimate = async (
-  target: ShallowRef<HTMLElement | null>,
+  target:
+    | ShallowRef<HTMLDivElement | null>
+    | globalThis.Ref<HTMLElement[] | undefined, HTMLElement[] | undefined>,
   params: AnimationParams,
 ) => {
-  const animation = ref<JSAnimation>();
-  if (import.meta.client) {
-    await onMounted(async () => {
-      animation.value = animate(target.value!, params);
-    });
-    return animation;
-  } else {
-    return animation;
+  if (target.value == undefined || target == undefined)
+    throw new Error("Missing HTML ELEMEMT");
+  else {
+    const animation = ref<JSAnimation>();
+    if (import.meta.client) {
+      await onMounted(async () => {
+        animation.value = animate(target.value!, params);
+      });
+      return animation;
+    } else {
+      return animation;
+    }
   }
 };
 

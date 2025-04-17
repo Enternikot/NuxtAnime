@@ -13,6 +13,9 @@ export default defineNuxtModule({
   meta: {
     name: "nuxt-anime",
     configKey: "nuxtAnime",
+    compatibility: {
+      nuxt: ">=3.0.0",
+    },
   },
   // Default configuration options of the Nuxt module
   defaults: {},
