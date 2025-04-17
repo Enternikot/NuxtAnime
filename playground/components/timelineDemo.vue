@@ -10,7 +10,6 @@
 </template>
 
 <script setup lang="ts">
-import { useAnimateTimeline } from "nuxtAnime/useAnimate";
 
 const box1 = useTemplateRef("box-1");
 const box2 = useTemplateRef("box-2");

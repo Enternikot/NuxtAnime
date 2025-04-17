@@ -6,7 +6,7 @@
 </template>
 
 <script setup lang="ts">
-import { useAnimate } from "nuxtAnime/useAnimate";
+
 
 const box = useTemplateRef("box");
 
