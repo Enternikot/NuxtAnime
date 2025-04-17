@@ -9,7 +9,7 @@
 import { stagger } from "animejs";
 
 const boxes = ref();
-const anim = useAnimate(boxes, {
+useAnimate(boxes, {
   x: 320,
   rotate: -180,
   ease: "inOutQuint",
