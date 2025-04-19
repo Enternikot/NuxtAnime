@@ -6,10 +6,7 @@
 </template>
 
 <script setup lang="ts">
-
-
 const box = useTemplateRef("box");
-
 const anim = await useAnimate(box, {
   autoplay: false,
   x: 100,

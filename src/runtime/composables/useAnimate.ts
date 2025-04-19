@@ -15,18 +15,14 @@ export const useAnimate = async (
     | globalThis.Ref<HTMLElement[] | undefined, HTMLElement[] | undefined>,
   params: AnimationParams,
 ) => {
-  if (target.value == undefined || target == undefined)
-    throw new Error("Missing HTML ELEMEMT");
-  else {
-    const animation = ref<JSAnimation>();
-    if (import.meta.client) {
-      await onMounted(async () => {
-        animation.value = animate(target.value!, params);
-      });
-      return animation;
-    } else {
-      return animation;
-    }
+  const animation = ref<JSAnimation>();
+  if (import.meta.client) {
+    await onMounted(async () => {
+      animation.value = animate(target.value!, params);
+    });
+    return animation;
+  } else {
+    return animation;
   }
 };
 
