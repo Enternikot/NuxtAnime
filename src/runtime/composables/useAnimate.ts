@@ -11,6 +11,7 @@ import { onMounted, type ShallowRef } from "vue";
 export const useAnimate = async (
   target:
     | ShallowRef<HTMLDivElement | null>
+    | Readonly<ShallowRef<HTMLDivElement | null>>
     | globalThis.Ref<HTMLElement[] | undefined, HTMLElement[] | undefined>,
   params: AnimationParams,
 ) => {
